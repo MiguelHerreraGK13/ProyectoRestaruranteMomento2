@@ -17,7 +17,7 @@ Este es un sistema para la administración de un restaurante que permite gestion
 ## Estructura del Proyecto
 
 ```
-sistema_restaurante_refactorizado/
+PROYECTORESTAURANTEMOMENTO2/
 │
 ├── domain/                  # Capa de dominio
 │   ├── model/               # Modelos de dominio
