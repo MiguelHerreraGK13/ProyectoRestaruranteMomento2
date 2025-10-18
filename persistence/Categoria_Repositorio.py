@@ -1,5 +1,5 @@
 """
-Repositorio para la persistencia de categorías en JSON
+Si no logramos terminar el proyecto vamos a realizar la persistencia en JSON
 """
 from persistence.Conexion import Conexion
 from domain.model.Categoria import Categoria

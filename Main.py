@@ -1,6 +1,6 @@
 """
 Punto de entrada principal para el sistema de restaurante
-ahora es momento de realizar un commit
+
 """
 from web.Menu_App import app
 

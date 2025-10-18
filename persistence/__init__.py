@@ -1,5 +1,6 @@
 """
 Inicializador de módulos para el paquete persistence
+para la importancion de conexiones, categorias y productos
 """
 
 from .Conexion import Conexion
