@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nombre": "Entradas",
+        "descripcion": "Aperitivos y pequeños platos para comenzar"
+    },
+    {
+        "id": 2,
+        "nombre": "Platos principales",
+        "descripcion": "Platos fuertes y especialidades"
+    },
+    {
+        "id": 3,
+        "nombre": "Postres",
+        "descripcion": "Dulces y postres variados"
+    },
+    {
+        "id": 4,
+        "nombre": "Bebidas",
+        "descripcion": "Refrescos, jugos y bebidas"
+    }
+]
