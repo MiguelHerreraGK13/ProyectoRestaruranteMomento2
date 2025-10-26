@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Ensalada César",
+        "descripcion": "Lechuga romana, crutones, parmesano y aderezo César",
+        "precio": 8.5,
+        "categoria_id": 1,
+        "nombre_categoria": "Entradas"
+    },
+    {
+        "id": 2,
+        "nombre": "Palitos de mozzarella",
+        "descripcion": "Queso mozzarella empanizado con salsa marinara",
+        "precio": 7.99,
+        "categoria_id": 1,
+        "nombre_categoria": "Entradas"
+    },
+    {
+        "id": 3,
+        "nombre": "Hamburguesa clásica",
+        "descripcion": "Carne de res, lechuga, tomate, cebolla y queso",
+        "precio": 12.99,
+        "categoria_id": 2,
+        "nombre_categoria": "Platos principales"
+    },
+    {
+        "id": 4,
+        "nombre": "Pizza Margherita",
+        "descripcion": "Salsa de tomate, mozzarella y albahaca",
+        "precio": 16.99,
+        "categoria_id": 2,
+        "nombre_categoria": "Platos principales"
+    },
+    {
+        "id": 5,
+        "nombre": "Helado de vainilla",
+        "descripcion": "Clásico helado de vainilla con toppings",
+        "precio": 4.99,
+        "categoria_id": 3,
+        "nombre_categoria": "Postres"
+    },
+    {
+        "id": 6,
+        "nombre": "Refresco",
+        "descripcion": "Refresco de cola, lima-limón o naranja",
+        "precio": 5000.0,
+        "categoria_id": 4,
+        "nombre_categoria": "Bebidas"
+    },
+    {
+        "id": 7,
+        "nombre": "Brownie ",
+        "descripcion": "Brownie con helado",
+        "precio": 5200.0,
+        "categoria_id": 3,
+        "nombre_categoria": "Postres"
+    }
+]
