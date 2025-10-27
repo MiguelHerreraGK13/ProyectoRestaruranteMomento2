@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Menú Completo - Sistema de Restaurante{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Menú del Restaurante</h1>
+
+{% if menu_por_categoria %}
+    {% for categoria, productos in menu_por_categoria.items() %}
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">
+                <h3>{{ categoria.nombre }}</h3>
+                {% if categoria.descripcion %}
+                    <p class="mb-0">{{ categoria.descripcion }}</p>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                {% if productos %}
+                    <div class="row">
+                        {% for producto in productos %}
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">{{ producto.nombre }}</h5>
+                                            <h5 class="text-primary">${{ "%.2f"|format(producto.precio) }}</h5>
+                                        </div>
+                                        {% if producto.descripcion %}
+                                            <p class="card-text">{{ producto.descripcion }}</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-muted">No hay productos disponibles en esta categoría.</p>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <div class="alert alert-info">
+        <h4>No hay categorías o productos disponibles en el menú.</h4>
+        <p>Para crear un menú:</p>
+        <ol>
+            <li>Primero, <a href="/categorias/nueva">cree categorías</a> para su menú.</li>
+            <li>Luego, <a href="/productos/nuevo">añada productos</a> a esas categorías.</li>
+        </ol>
+    </div>
+{% endif %}
+{% endblock %}
